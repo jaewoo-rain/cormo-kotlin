@@ -22,14 +22,25 @@
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"
         android:background="@color/white"
-        android:layout_marginBottom="56dp" />
+        android:layout_marginBottom="80dp" />
 
     <!-- 하단 탭 -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/homeBottomNav"
+    <!-- ✅ 커스텀 하단바 -->
+    <com.cormo.neulbeot.core.widget.HomeBottomBarView
+        android:id="@+id/homeBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_gravity="bottom"
-        app:menu="@menu/menu_home_bottom" />
+        android:layout_height="80dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_gravity="bottom"/>
+
+    <!-- 중앙 버튼 오버레이: 형제(하단바 위에 그림) -->
+    <include
+        layout="@layout/view_home_bottom_center_button"
+        android:id="@+id/bottomCenterButtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

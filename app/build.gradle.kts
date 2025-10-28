@@ -9,6 +9,19 @@ android {
     namespace = "com.cormo.neulbeot"
     compileSdk = 36
 
+    sourceSets{
+        named("main"){
+            res.srcDirs(
+                "src/main/res",
+                "src/home/res",
+                "src/challenge/res",
+                "src/login/res",
+                "src/signup/res",
+                "src/activity/res"
+            )
+        }
+    }
+
     defaultConfig {
         applicationId = "com.cormo.neulbeot"
         minSdk = 24

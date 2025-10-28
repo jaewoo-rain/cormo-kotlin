@@ -60,9 +60,9 @@ class HomeBottomBarView @JvmOverloads constructor(
 
         // 라벨 (플러터 명칭과 현재 메뉴 명칭 중 택1 — 여기선 메뉴에 맞춤)
         homeLabel.text = "홈"
-        chalLabel.text = "챌린지"
+        chalLabel.text = "게임/챌린지"
         marketLabel.text = "마켓"
-        profileLabel.text = "프로필"
+        profileLabel.text = "마이페이지"
 
         // 아이콘 연결 (프로젝트의 실제 아이콘으로 교체 가능)
         homeIcon.setImageResource(R.drawable.ic_home_24)

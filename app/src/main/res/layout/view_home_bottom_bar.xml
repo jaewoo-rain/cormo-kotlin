@@ -24,16 +24,30 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="bottom|center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:baselineAligned="false">
 
-            <include layout="@layout/view_nav_item" android:id="@+id/item_home" />
-            <include layout="@layout/view_nav_item" android:id="@+id/item_challenge" />
+        <include
+            android:id="@+id/item_home"
+            layout="@layout/view_nav_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="0dp"/>
+
+        <include
+            android:id="@+id/item_challenge"
+            layout="@layout/view_nav_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="0dp"/>
         </LinearLayout>
 
-        <!-- 중앙 버튼 자리(버튼폭 70 + 12 여유 = 82dp) -->
+        <!-- 중앙 버튼 자리(버튼폭 70 + 여유 a dp) -->
         <Space
-            android:layout_width="75dp"
+            android:layout_width="80dp"
             android:layout_height="1dp" />
 
         <!-- 오른쪽 2개 -->
@@ -41,11 +55,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="bottom|center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:baselineAligned="false">
 
-            <include layout="@layout/view_nav_item" android:id="@+id/item_market" />
-            <include layout="@layout/view_nav_item" android:id="@+id/item_profile" />
+            <include
+                android:id="@+id/item_market"
+                layout="@layout/view_nav_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="0dp"/>
+
+            <include
+                android:id="@+id/item_profile"
+                layout="@layout/view_nav_item"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
